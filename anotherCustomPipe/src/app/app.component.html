@@ -1,0 +1,18 @@
+<div class="container">
+
+  <nav class="navbar navbar-light bg-inverse navbar-inverse">
+  <a class="navbar-brand">
+    <img src="./favicon.ico" width="10" height="10" class="d-inline-block align-left" alt="">
+    Angular 2 Custom Pipe
+  </a>
+  </nav>
+
+  <div class="container well">
+    <h2> Friends whose name start with 'A': </h2>
+    <hr/>
+    <ul class="list-group" *ngFor = 'let friend of friends | filterpipe' >
+      <li class="list-group-item"> {{friend.name}} </li>
+    </ul>
+  </div>
+
+</div>
